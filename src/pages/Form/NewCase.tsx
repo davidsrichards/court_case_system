@@ -1,4 +1,5 @@
 import SelectGroupOne from '../../components/Forms/SelectGroup/SelectGroupOne'
+import Photo from '../UiElements/Photo'
 
 function NewCase() {
   return (
@@ -35,30 +36,33 @@ function NewCase() {
               />
             </div>
           </div>
+          {/*  */}
+          <div className="mb-4.5 flex flex-col gap-6 xl:flex-row">
+            <div className="w-full xl:w-1/2">
+              <label className="mb-2.5 block text-black dark:text-white">
+                Headed By
+              </label>
+              <input
+                type="text"
+                placeholder="Enter the header's name"
+                className="w-full rounded border-[1.5px] border-stroke bg-transparent py-3 px-5 text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary"
+              />
+            </div>
 
-          <div className="mb-4.5">
-            <label className="mb-2.5 block text-black dark:text-white">
-              Email <span className="text-meta-1">*</span>
-            </label>
-            <input
-              type="email"
-              placeholder="Enter your email address"
-              className="w-full rounded border-[1.5px] border-stroke bg-transparent py-3 px-5 text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary"
-            />
+            <div className="w-full xl:w-1/2">
+              <label className="mb-2.5 block text-black dark:text-white">
+                Next seating date
+              </label>
+              <input
+                type="date"
+                className="w-full rounded border-[1.5px] border-stroke bg-transparent py-3 px-5 text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary"
+              />
+            </div>
           </div>
 
-          <div className="mb-4.5">
-            <label className="mb-2.5 block text-black dark:text-white">
-              Subject
-            </label>
-            <input
-              type="text"
-              placeholder="Select subject"
-              className="w-full rounded border-[1.5px] border-stroke bg-transparent py-3 px-5 text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary"
-            />
-          </div>
 
           <SelectGroupOne />
+          <Photo/>
 
           <div className="mb-6">
             <label className="mb-2.5 block text-black dark:text-white">
