@@ -61,17 +61,15 @@ const Header = (props: {
         </div>
 
         <div className="hidden sm:block">
-            <div className="relative">
-           
-              <DarkModeSwitcher />
-
-            </div>
+          <div className="relative">
+            <DarkModeSwitcher />
+          </div>
         </div>
 
         <div className="flex items-center gap-3 2xsm:gap-7">
           <ul className="flex items-center gap-2 2xsm:gap-4">
             {/* <!-- Dark Mode Toggler --> */}
-           
+
             {/* <!-- Dark Mode Toggler --> */}
 
             {/* <!-- Notification Menu Area --> */}
